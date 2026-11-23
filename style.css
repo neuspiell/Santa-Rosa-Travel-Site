@@ -1,0 +1,128 @@
+/* FONT IMPORTS SECTION */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* HTML, BODY */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/*HERO BACKGROUND */
+.top-main {
+    background-image: url("https://staelena.com/cdn/shop/files/DJI_0013a_1_3992x2992.jpg?v=1705992561");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* NAV BAR */
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    transition: background 0.5s;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 30px;
+    padding: 8px 16px;
+    display: inline-block;
+    transition: background 0.5s, color 0.5s;
+}
+
+.navigation-bar a:hover {
+    background: #657a42;
+    color: #ffffff;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* HERO CONTENTS */
+.hero-paragraph {
+    max-width: 520px;
+    margin-top: 6px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    line-height: 1.6;
+}
+
+.hero-text {
+    padding: 7.5%;
+}
+
+.hero-h1 {
+    color: #ffffff;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 0 0 0.25rem;
+}
+
+.hero-via {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* MOBILE VIEW*/
+/* HAMBURGER (NOT VISIBLE DESKTOP VIEW)*/
+.navham {
+    display: none;
+    background: none;
+    border: none;
+    color: #212121;
+    font-size: 28px;
+}
+
+/* MOBILE FORMAT */
+@media (max-width: 768px) {
+    .navigation-bar {
+        flex-wrap: wrap;
+        padding: 15px 20px;
+        background: #ffffff;
+    }
+
+    .navham {
+        display: block;
+        order: -1;
+    }
+
+    .nav-buttons {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-buttons.active {
+        display: flex;
+    }
+}
