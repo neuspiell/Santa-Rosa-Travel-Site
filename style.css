@@ -90,6 +90,51 @@ body {
     margin: 0;
 }
 
+/* DISCOVER, ATD */
+.about-the-desination {
+    padding: 50px 25px;
+}
+
+.atd {
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.atd-picture img {
+    border-radius: 20px;
+    width: 80%;
+    display: block;
+    object-fit: cover;
+    margin: auto;
+
+}
+.atd-paragraph {
+    flex: 1;
+    
+}
+
+.atd-p {
+    margin: 0;
+    width: 95%;
+}
+
+.atd-h1 {
+    font-family: "Cormorant Garamond", serif;
+
+}
+
+
+
+
+
+
+
+
+
+
 /* MOBILE VIEW*/
 /* HAMBURGER (NOT VISIBLE DESKTOP VIEW)*/
 .navham {
@@ -124,5 +169,16 @@ body {
 
     .nav-buttons.active {
         display: flex;
+    }
+
+    /* ATD */
+    .atd {
+        width: 100%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .atd-paragraph, .atd-picture {
+        width: 100%;
     }
 }
